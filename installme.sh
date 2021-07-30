@@ -1,4 +1,6 @@
 #
+#
+#
 #   1. Pulls the farmfresh app from bitbucket (git clone https://RaspberryPi4B@bitbucket.org/RaspberryPi4B/farmfresh.git)
 #   2. Runs the installation script (sudo /bin/bash ~/Mycodo/install/setup.sh)
 #
@@ -14,7 +16,7 @@ if [ "$EUID" -eq 0 ]; then
 fi
 
 if [ -d ~/farmfresh ]; then
-  printf "## Error: Install aborted. Cause: The ~/farmfresh directory already exists. The installation cannot continue because a previous installation was detected. Please either move or delete the ~/farmfresh directory and rerun this script to initiate the install or run ~/farmfresh/install/setup.sh.\n"
+  printf "## A ~/farmfresh directory already exists. It will be removed and replaced by a fresh version."
   exit 1
 fi
 
