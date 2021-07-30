@@ -16,7 +16,7 @@ if [ "$EUID" -eq 0 ]; then
 fi
 
 if [ -d ~/farmfresh ]; then
-  printf "## A ~/farmfresh directory already exists. It will be removed and replaced by a fresh version."
+  printf "## A ~/farmfresh directory already exists. It will be removed and replaced with a fresh version."
   exit 1
 fi
 
