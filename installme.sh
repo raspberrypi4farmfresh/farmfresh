@@ -17,7 +17,6 @@ fi
 
 if [ -d ~/farmfresh ]; then
   printf "## A ~/farmfresh directory already exists. It will be removed and replaced with a fresh version."
-  exit 1
 fi
 
 sudo apt-get install -y jq whiptail python3 git
