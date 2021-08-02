@@ -17,6 +17,8 @@ fi
 
 if [ -d ~/farmfresh ]; then
   printf "## A ~/farmfresh directory already exists. It will be removed and replaced with a fresh version."
+  sudo rm /var/mycodo-root/databases/mycodo.db
+  sudo rm -r ~/farmfresh
 fi
 
 sudo apt-get install -y jq whiptail python3 git
